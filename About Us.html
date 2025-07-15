@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="res.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <h1 class="title">Prison Break</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">მთავარი</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="About Us.html">ჩვენს შესახებ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Services.html">სერვისები</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="News.html">სიახლე</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">კონტაქტი</a>
+              </li>
+            </ul>
+            <a class=" signin btn btn-warning ms-lg-3" href="Login.html">Sign In</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Section -->
+    <section class="about">
+      <h1>ჩვენს შესახებ</h1>
+      <div class="intro">
+        <p>
+          ჩვენი ვებსაიტი შექმნილია Prison Break-ის სერიალის მოყვარულებისთვის. ეს
+          არის ადგილი, სადაც შეგიძლიათ გაეცნოთ სერიალის დეტალებს, პერსონაჟებს,
+          შეავსოთ ქვიზები და იხილოთ სიახლეები. პროექტი შემუშავდა როგორც ფინალური
+          დავალება ვებ დეველოპმენტის კურსისთვის.
+        </p>
+      </div>
+      <div class="mission">
+        <h2>🎯 ჩვენი მიზანი</h2>
+        <p>
+          გვსურს Prison Break-ის გულშემატკივრებს შევუქმნათ მარტივად
+          ხელმისაწვდომი, ვიზუალურად ლამაზი და ინფორმაციული სივრცე. აქ
+          თავმოყრილია ყველაფერი რაც ფანს სჭირდება — მოკლე აღწერები, ფოტოგალერეა,
+          ტესტები და სხვა.
+        </p>
+      </div>
+      <div class="team">
+        <h2>👨‍💻 ჩვენი გუნდი</h2>
+        <ul>
+          <li><strong>ნიკა:</strong> პროექტის დიზაინი და HTML სტრუქტურა</li>
+          <li><strong>ნიკა:</strong> ფუნქციონალის პროგრამირება და ქვიზები (JS)</li>
+          <li><strong>ნიკა:</strong> სტილიზაცია, ფერთა შერჩევა და ტესტირება</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div>
+        <h1>Prison Break</h1>
+        <div class="img-links">
+          <a href="https://tbcbank.ge/ka/tbc-education" target="_blank"><img src="assets/tbc-logo 1.svg" alt=""/></a>
+          <a href="https://www.facebook.com/tbcbank" target="_blank"><img src="assets/entypo-social--facebook.svg" alt=""/></a>
+          <a href="https://www.instagram.com/t_b_c_/" target="_blank"><img src="assets/teenyicons--instagram-outline.svg" alt=""/></a>
+          <a href="https://www.linkedin.com/company/tbc-bank/" target="_blank"><img src="assets/flowbite--linkedin-solid.svg" alt=""/></a>
+        </div>
+        <div class="contact-us">
+          <h4>Contact Us: <span>nika.dev09@gmail.com</span></h4>
+        </div>
+      </div>
+      <p>&copy; 2025 Nika's Web. ყველა უფლება დაცულია.</p>
+    </footer>
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const currentPage = decodeURIComponent(location.pathname.split("/").pop());
+      document.querySelectorAll("nav a").forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

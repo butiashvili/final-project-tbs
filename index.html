@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="res.css">
+    <title>Prison Break</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <h1 class="title">Prison Break</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">მთავარი</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About Us.html">ჩვენს შესახებ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Services.html">სერვისები</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="News.html">სიახლე</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">კონტაქტი</a>
+              </li>
+            </ul>
+            <a class=" signin btn btn-warning ms-lg-3" href="Login.html">Sign In</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Section N1 -->
+    <section id="carousel">
+      <div id="customCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- სლაიდები -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="assets/bg2.jpg" class="d-block w-100" alt="Slide 1"/>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="assets/AAAABd1oQjyF-In-IPT6G6rnSuRrA8sPT24DWdIOL29NA7G5HSuGXlEp5FhnCb0cEm6a2SLOJicgV_l3T_Vi1j4_-QY95nVXGKNjuJP-.jpg" class="d-block w-100" alt="Slide 2"/>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="assets/bg 3.jpg" class="d-block w-100" alt="Slide 3"/>
+          </div>
+        </div>
+        <!-- ღილაკები -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next"> <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+    <!-- Section N2 -->
+    <section class="description">
+      <h2>სერიალის მოკლე აღწერა</h2>
+      <p>
+        Prison Break გვიამბობს მაიკლ სკოფილდის ისტორიას, რომელიც გეგმავს თავისი
+        უდანაშაულო ძმის, ლინკოლნ ბაროუზის, ციხიდან დახსნას. მაიკლი ტატუებით
+        ფარავს გაქცევის გეგმას, რის შედეგადაც იწყება ერთ-ერთი ყველაზე ეპიკური
+        გაქცევის სერიალი ტელევიზიის ისტორიაში.
+      </p>
+    </section>
+    <!-- Section N3 -->
+    <section id="quiz-section">
+      <h2>🧠 Prison Break Quiz</h2>
+      <form id="quiz-form">
+        <!-- 1 -->
+        <div class="question">
+          <p>1. ვის გადაარჩენს მაიკლ სკოფილდი?</p>
+          <label><input type="radio" name="q1" value="correct"/>ლინკოლნ ბაროუზი</label>
+          <label><input type="radio" name="q1" value="wrong"/>თი-ბეგი</label>
+          <label><input type="radio" name="q1" value="wrong"/>ფერნანდოუკრე</label>
+        </div>
+        <!-- 2 -->
+        <div class="question">
+          <p>2. რომელი ციხიდან ცდილობენ გაქცევას პირველ სეზონში?</p>
+          <label><input type="radio" name="q2" value="correct"/>Fox River</label>
+          <label><input type="radio" name="q2" value="wrong"/>Alcatraz</label>
+          <label><input type="radio" name="q2" value="wrong"/>Sona</label>
+        </div>
+        <!-- 3 -->
+        <div class="question">
+          <p>3. მაიკლს სად აქვს ტატუ?</p>
+          <label><input type="radio" name="q3" value="wrong"/>სახეზე</label>
+          <label><input type="radio" name="q3" value="correct"/>სხეულზე(ზურგი,მკლავები)</label>
+          <label><input type="radio" name="q3" value="wrong"/>ფეხებზე</label>
+        </div>
+        <!-- 4 -->
+        <div class="question">
+          <p>4. სერიალში "The Company" რას წარმოადგენს?</p>
+          <label><input type="radio" name="q4" value="wrong"/>კერძო ბანკს</label>
+          <label><input type="radio" name="q4" value="wrong"/>ციხის ადმინისტრაციას</label>
+          <label><input type="radio" name="q4" value="correct"/>საიდუმლო ორგანიზაციას</label>
+        </div>
+        <!-- 5 -->
+        <div class="question">
+          <p>5. რომელ სეზონში ბრუნდება მაიკლი "მკვდრეთით"?</p>
+          <label><input type="radio" name="q5" value="wrong"/>4</label>
+          <label><input type="radio" name="q5" value="wrong"/>3</label>
+          <label><input type="radio" name="q5" value="correct"/>5</label>
+        </div>
+        <button class="quiz-btn" type="button" onclick="checkQuiz()">შედეგის ნახვა</button>
+        <p id="result"></p>
+      </form>
+    </section>
+    <!-- Section N4 -->
+    <section id="characters">
+      <h1>მთავარი პერსონაჟები</h1>
+      <div class="container-1">
+        <!-- First Line -->
+        <div class="character">
+          <img src="assets/Actors-wentworth-miller.webp" alt="Wentworth Miller"/>
+          <h2>Wentworth Miller</h2>
+          <p>(Michael Scofield)</p>
+        </div>
+        <div class="character">
+          <img src="assets/170202-dominicpurcell-e1600782256943.jpg" alt="Dominic Purcell"/>
+          <h2>Dominic Purcell</h2>
+          <p>(Lincoln Burrows)</p>
+        </div>
+        <div class="character">
+          <img src="assets/Sukre.jpg" alt="Amaury Nolasco"/>
+          <h2>Amaury Nolasco</h2>
+          <p>(Fernando Sucre)</p>
+        </div>
+        <div class="character">
+          <img src="assets/sara.jpg" alt="Sarah Wayne Callies"/>
+          <h2>Sarah Wayne Callies</h2>
+          <p>(Sara Tancredi)</p>
+        </div>
+        <div class="character">
+          <img src="assets/t-bag.jpg" alt="Robert Knepper"/>
+          <h2>Robert Knepper</h2>
+          <p>(T-Bag)</p>
+        </div>
+        <!-- Second Line -->
+      </div>
+      <div class="container-2">
+        <div class="character">
+          <img src="assets/Paul-Adelstein.jpg" alt="Paul Adelstein"/>
+          <h2>Paul Adelstein</h2>
+          <p>(Paul Kellerman)</p>
+        </div>
+        <div class="character">
+          <img src="assets/c-note.jpg" alt="Rockmond Dunbar"/>
+          <h2>Rockmond Dunbar</h2>
+          <p>(C-Note)</p>
+        </div>
+        <div class="character">
+          <img src="assets/William_Fichtner.PNG.webp" alt="William Fichtner"/>
+          <h2>William Fichtner</h2>
+          <p>(Alexander Mahone)</p>
+        </div>
+        <div class="character">
+          <img src="assets/lj.jpg" alt="Marshall Allman"/>
+          <h2>Marshall Allman</h2>
+          <p>(LJ Burrows)</p>
+        </div>
+        <div class="character">
+          <img src="assets/Peter-Stormare-707x780.jpg" alt="Peter Stormare"/>
+          <h2>Peter Stormare</h2>
+          <p>(John Abruzzi)</p>
+        </div>
+      </div>
+    </section>
+    <!-- Section N5 -->
+    <section id="ratings-section">
+      <h1>შეფასებები და გამოხმაურებები</h1>
+      <div class="cards">
+        <div class="card">
+          <h3>IMDb</h3>
+          <span>⭐ 8.7/10</span>
+          <p>“შთამბეჭდავი სიუჟეტი და დაუვიწყარი პერსონაჟები.”</p>
+        </div>
+        <div class="card">
+          <h3>Rotten Tomatoes</h3>
+          <span>🍅 92%</span>
+          <p>“საუკეთესო დრამა ბოლო ათწლეულში.”</p>
+        </div>
+        <div class="card">
+          <h3>Metacritic</h3>
+          <span>📊 84/100</span>
+          <p>“კრიტიკოსების ერთსულოვანი შეფასება.”</p>
+        </div>
+        <div class="card">
+          <h3>YouTube Comments</h3>
+          <span>💬 “True masterpiece.”</span>
+          <p>“ვუყურე სამჯერ და ისევ არ მბეზრდება!”</p>
+        </div>
+        <div class="card">
+          <h3>Facebook Review</h3>
+          <span>👍 4.6/5</span>
+          <p>“ყველას გირჩევთ, აუცილებლად ნახეთ!”</p>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div>
+        <h1>Prison Break</h1>
+        <div class="img-links">
+          <a href="https://tbcbank.ge/ka/tbc-education" target="_blank"><img src="assets/tbc-logo 1.svg" alt=""/></a>
+          <a href="https://www.facebook.com/tbcbank" target="_blank"><img src="assets/entypo-social--facebook.svg" alt=""/></a>
+          <a href="https://www.instagram.com/t_b_c_/" target="_blank"><img src="assets/teenyicons--instagram-outline.svg" alt=""/></a>
+          <a href="https://www.linkedin.com/company/tbc-bank/" target="_blank"><img src="assets/flowbite--linkedin-solid.svg" alt=""/></a>
+        </div>
+        <div class="contact-us">
+          <h4>Contact Us: <span>nika.dev09@gmail.com</span></h4>
+        </div>
+      </div>
+      <p>&copy; 2025 Nika's Web. ყველა უფლება დაცულია.</p>
+    </footer>
+    <!-- Bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Quiz Script -->
+    <script>
+      function checkQuiz() {
+        let score = 0;
+        const total = 5;
+        for (let i = 1; i <= total; i++) {
+          const answer = document.querySelector(`input[name="q${i}"]:checked`);
+          if (answer && answer.value === "correct") {
+            score++;
+          }
+        }
+        const result = document.getElementById("result");
+        if (score < total) {
+          result.style.color = "#facc15";
+        } else {
+          result.style.color = "lightgreen";
+        }
+        if (score === 0) {
+          result.innerText = `შენ არ ყოფილხარ Prison Break-ის ფანი 😅 (0/${total})`;
+        } else if (score === total) {
+          result.innerText = `💥 იდეალური! შენ ხარ ნამდვილი Prison Break-ის ლეგენდა (${score}/${total})`;
+        } else {
+          result.innerText = `შენი ქულაა: ${score}/${total}`;
+        }
+      }
+    </script>
+    <!-- Nav Bar script -->
+    <script>
+      const currentPage = location.pathname.split("/").pop();
+      const navLinks = document.querySelectorAll("nav a");
+      navLinks.forEach(link => {
+        if(link.getAttribute("href") === currentPage){
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
